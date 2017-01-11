@@ -12,7 +12,7 @@
 				return false;
 			}
 
-			$('#todos').prepend("<li><input id='check' name='check' type='checkbox'/>" + Description + "</li>");
+			$('#todos').prepend("<li>" + Description + "</li>");
 			$('#form')[0].reset();
 			var todos = $('#todos').html();
 			localStorage.setItem('todos', todos);
